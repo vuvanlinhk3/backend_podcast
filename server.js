@@ -7,7 +7,8 @@ const app = express();
 // Cấu hình CORS (cho phép localhost trong dev)
 app.use(
   cors({
-    origin: "http://localhost:3000", // Chỉ cho phép origin từ React app
+    origin: "http://localhost:3000",
+     origin: "https://vuvanlinhk3.github.io/podcast-demo",
   })
 );
 
