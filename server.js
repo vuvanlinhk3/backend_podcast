@@ -7,11 +7,9 @@ const app = express();
 // Cấu hình CORS (cho phép localhost trong dev)
 app.use(
   cors({
-    origin: "http://localhost:3000",
-     origin: "https://vuvanlinhk3.github.io/podcast-demo",
-     origin: ["https://vuvanlinhk3.github.io", "https://vuvanlinhk3.github.io/podcast-demo"],
-     methods: ["GET", "POST"],
-     allowedHeaders: ["Content-Type"]
+    origin: ["http://localhost:3000", "https://vuvanlinhk3.github.io", "https://vuvanlinhk3.github.io/podcast-demo"],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
   })
 );
 
